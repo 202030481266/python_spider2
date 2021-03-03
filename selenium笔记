@@ -1,0 +1,24 @@
+优点：
+- 可以很方便地获取相关的动态加载的数据
+- 可以方便的实现模拟登录
+简介：
+- 基于浏览器自动化的模块（根据代码自动进行浏览器的相关操作）
+使用流程：
+- 安装
+- 下载浏览器驱动程序
+- 实例化一个浏览器对象
+- 编写基于浏览器自动化的代码
+    - 发起请求 get(url)
+    - 标签定位 使用find系列的方法
+    - 标签交互 send_keys()
+    - 执行js程序 excute_script('jscode')
+    - 前进，后退 back,forward
+    - 关闭浏览器 quit
+selenium处理iframe(页面嵌入式)
+- 定位的标签在iframe中就要使用switch_to.frame()
+- 动作链：from selenium.webdriver import ActionChains
+    - 实例化一个动作链对象
+    - 动作链动作规定，最后执行，释放
+- 无头部的浏览器使用代码
+- 反检测selenium
+- 这样的代码不用理解，不用背，用的时候直接粘贴复制
